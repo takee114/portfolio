@@ -80,7 +80,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
-.nodeJs-email-api .error-message {
+.vercel-email .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -90,7 +90,7 @@ h6 {
   font-weight: 600;
 }
 
-.nodeJs-email-api .sent-message {
+.vercel-email .sent-message {
   display: none;
   color: #ffffff;
   background: #059652;
@@ -100,7 +100,7 @@ h6 {
   font-weight: 600;
 }
 
-.nodeJs-email-api .loading {
+.vercel-email .loading {
   display: none;
   background: var(--surface-color);
   text-align: center;
@@ -108,7 +108,7 @@ h6 {
   margin-bottom: 24px;
 }
 
-.nodeJs-email-api .loading:before {
+.vercel-email .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -117,10 +117,10 @@ h6 {
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
-  animation: nodeJs-email-api-loading 1s linear infinite;
+  animation: vercel-email-loading 1s linear infinite;
 }
 
-@keyframes nodeJs-email-api-loading {
+@keyframes vercel-email-loading {
   0% {
     transform: rotate(0deg);
   }
@@ -1179,7 +1179,7 @@ section,
   color: var(--contrast-color);
 }
 
-.contact .nodeJs-email-api {
+.contact .vercel-email {
   background-color: var(--surface-color);
   height: 100%;
   padding: 30px;
@@ -1187,14 +1187,14 @@ section,
 }
 
 @media (max-width: 575px) {
-  .contact .nodeJs-email-api {
+  .contact .vercel-email {
     padding: 20px;
   }
 }
 
-.contact .nodeJs-email-api input[type="text"],
-.contact .nodeJs-email-api input[type="email"],
-.contact .nodeJs-email-api textarea {
+.contact .vercel-email input[type="text"],
+.contact .vercel-email input[type="email"],
+.contact .vercel-email textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
@@ -1204,19 +1204,19 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .nodeJs-email-api input[type="text"]:focus,
-.contact .nodeJs-email-api input[type="email"]:focus,
-.contact .nodeJs-email-api textarea:focus {
+.contact .vercel-email input[type="text"]:focus,
+.contact .vercel-email input[type="email"]:focus,
+.contact .vercel-email textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .nodeJs-email-api input[type="text"]::placeholder,
-.contact .nodeJs-email-api input[type="email"]::placeholder,
-.contact .nodeJs-email-api textarea::placeholder {
+.contact .vercel-email input[type="text"]::placeholder,
+.contact .vercel-email input[type="email"]::placeholder,
+.contact .vercel-email textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .nodeJs-email-api button[type="submit"] {
+.contact .vercel-email button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1225,7 +1225,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .nodeJs-email-api button[type="submit"]:hover {
+.contact .vercel-email button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 

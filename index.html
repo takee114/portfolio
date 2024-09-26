@@ -1230,12 +1230,14 @@
 
       <div class="col-lg-7">
         <form
-          action="api/contact.js"
-          method="post"
-          class="nodeJs-email-api"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="vercel-email"
           data-aos="fade-up"
           data-aos-delay="200"
         >
+          <input type="hidden" name="access_key" value="b5aeb17e-6757-4272-b0a2-72a279cfe851" />
+          
           <div class="row gy-4">
             <div class="col-md-6">
               <label for="name-field" class="pb-2">Your Name</label>
@@ -1245,10 +1247,10 @@
                 id="name-field"
                 class="form-control"
                 placeholder="Enter your name"
-                required=""
+                required
               />
             </div>
-
+      
             <div class="col-md-6">
               <label for="email-field" class="pb-2">Your Email</label>
               <input
@@ -1257,10 +1259,10 @@
                 name="email"
                 id="email-field"
                 placeholder="Enter your email"
-                required=""
+                required
               />
             </div>
-
+      
             <div class="col-md-12">
               <label for="subject-field" class="pb-2">Subject</label>
               <input
@@ -1269,10 +1271,10 @@
                 name="subject"
                 id="subject-field"
                 placeholder="Enter subject"
-                required=""
+                required
               />
             </div>
-
+      
             <div class="col-md-12">
               <label for="message-field" class="pb-2">Message</label>
               <textarea
@@ -1281,22 +1283,20 @@
                 rows="8"
                 id="message-field"
                 placeholder="Write your message"
-                required=""
+                required
               ></textarea>
             </div>
-
+      
             <div class="col-md-12 text-center">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
-              <div class="sent-message">
-                Your message has been sent. Thank you!
-              </div>
-
+              <div class="sent-message">Your message has been sent. Thank you!</div>
               <button type="submit">Send Message</button>
             </div>
           </div>
         </form>
       </div>
+      
       <!-- End Contact Form -->
     </div>
   </div>
@@ -1335,7 +1335,7 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/nodeJs-email-api/validate.js"></script>
+    <script src="assets/vendor/vercel-email/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

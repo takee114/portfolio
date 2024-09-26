@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  let forms = document.querySelectorAll(".nodeJs-email-api");
+  let forms = document.querySelectorAll(".vercel-email");
 
   forms.forEach(function (e) {
     e.addEventListener("submit", function (event) {
